@@ -1,0 +1,27 @@
+#host
+host=http://localhost:8080/
+
+#method
+#method=POST
+method=GET
+
+#headers
+#for multiple headers, add like this:  "-H header1:value2 -H header2:value2"
+header='-H Content-Type:application/json -H accesstoken:some_random=string -H userid:st123'
+
+#url to hit
+url=/api/v1/student/21/feed 
+
+#parameter
+urlParam='{"subjectId":100,"sourceId":34,"status":"OPEN"}'
+#urlParam='subjectId=100&sourceId=34&status=OPEN'
+
+#total hits given to the above url
+loop=50
+
+#time duration to execute all request in seconds. ie. all requests will be executed in totalTime seconds
+totalTime=1
+
+#logFile: file name in which you want to print the thread information (response and response time) running the test
+logFile=access.log
+
